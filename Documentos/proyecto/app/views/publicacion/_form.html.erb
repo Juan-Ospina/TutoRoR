@@ -1,0 +1,15 @@
+<%= form_for :publicacion, url: publicacion_create_path do |f| %>
+  <p>
+    <%= f.label :titulo %></b>
+    <%= f.text_field :titulo %>
+  </p>
+ 
+  <p>
+    <%= f.label :contenido %></b>
+    <%= f.text_area :contenido %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
